@@ -31,3 +31,33 @@
     transform: rotate(360deg);
   }
 }
+
+Form {
+  width:20%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  margin:auto;
+}
+
+input {
+  padding:10px;
+  margin-bottom:20px;
+}
+textarea {
+  padding:30px;
+  margin-bottom:20px;
+}
+
+button {
+  margin:auto;
+  width:50%;
+  padding:10px;
+  color:green;
+  background:lightpink;
+  margin-top:20px;
+}
+.check {
+  padding:20px;
+  margin:auto;
+}

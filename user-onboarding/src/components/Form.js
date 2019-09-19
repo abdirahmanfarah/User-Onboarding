@@ -8,7 +8,12 @@ const User = props => {
   return (
     <Form>
       <Field type="text" name="name" placeholder = "Name" />
+      <Field type="text" name="email" placeholder ="Email"/>
+      <Field type="password" name ="password" placeholder ="Password"/>
+      <Field component="textarea" name = "note" placeholder ="Notes" />
+      <Field className ="check" type ="checkbox" name="terms" />
       <button type ="submit"> Submit</button>
+
     </Form>
   )
 }
@@ -16,7 +21,11 @@ const User = props => {
 export default withFormik({
   mapPropsToValues:(values) => {
     return {
-      name: values.name || "default values"
+      name: values.name || "",
+      email: values.email || "",
+      password: values.password || "",
+      terms: values.terms || false,
+      note:values.note
     }
   },
   handleSubmit:(values) => {
