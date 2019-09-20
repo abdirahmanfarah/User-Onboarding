@@ -33,7 +33,7 @@
 }
 
 Form {
-  width:20%;
+  width:50%;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -60,4 +60,12 @@ button {
 .check {
   padding:20px;
   margin:auto;
+}
+.list {
+  width:50%;
+  background:yellow;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin:20px auto;
 }
